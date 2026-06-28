@@ -10,3 +10,13 @@ Sistema em Java focado na aplicação prática de Programação Orientada a Obje
 No diretório raiz do projeto (onde está localizado o arquivo `pom.xml`), execute o comando de empacotamento:
 ```bash
 mvn clean package
+
+Após a compilação obter sucesso (BUILD SUCCESS), inicialize a aplicação executando:
+
+Bash
+java -jar target/calculadora-imc-1.0.0.jar
+
+Alternativamente, você pode rodar direto via Maven sem gerar o .jar:
+
+Bash
+mvn exec:java -Dexec.mainClass="Main"
